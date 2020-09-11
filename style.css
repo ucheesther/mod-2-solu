@@ -1,0 +1,133 @@
+ {
+       box-sizing: border-box;
+    }
+.section{
+    background: #999999;
+     border: 2px solid black;
+      width: 90%;
+        height: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    margin-bottom: 30px;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+
+    
+}
+.section p{
+    border-left:2px solid black;
+    border-bottom:2px solid black;
+    width: 150px;
+    margin-right: 0;
+/*    position: absolute;*/
+    float: right;
+    height: 30px;
+    margin: 0;
+    text-align: center;
+    padding-top:5px; 
+
+}
+
+.clear:"clear: both";
+.section:last-child{
+    margin-right: 0;
+}
+    h1 {
+     margin-bottom: 15px;
+     text-align: center
+    }
+.lorem-text{
+    display: block;
+    float: left;
+    padding: 5px;
+}
+    
+.paragraph1 {
+    background-color: #D59898;
+    color: solid black;
+}
+.paragraph2 {
+    background-color: #C14543;
+}
+.paragraph3 {
+    background-color: #E5D198;
+}
+    p {
+/*       border: 1px solid black;*/
+/*       background-color: #999999;*/
+/*       width: 90%;*/
+/*        height: 150px;*/
+/*
+        margin-right: auto;
+        margin-left: auto;
+*/
+        font-family: Helvetica;
+       /* color: #D59898; */
+        text-align: right; 
+ }  
+.container{
+    margin:40px;
+}
+
+/* simple responsive framework. */
+    .row {
+      width: 100%;
+    }
+
+
+.col-md-2{
+    width: 20%;
+}
+ .col-lg-4 {
+        width: 31%;
+     display: inline-block;
+        }
+
+    /****** large devices only *****/
+    @media (min-width: 992px) {
+.col-lg-1, .col-lg-2, .col-lg-3, {
+float: left;
+border: 1px solid black;
+        }
+       
+       
+        
+    }
+    
+    /******* medium devices only *****/
+    @media (min-width: 768px)and (max-width: 991px) {  
+        .col-md-6 {
+            width: 48%;
+            display: inline-block;
+            float: left;
+/*            background: red;*/
+        }
+                .section{
+    margin-right: 2.5;
+}
+
+        .section:nth-child(2){
+    margin-right: 0;
+}
+        
+        .col-md-12 {
+            width: 100%;
+            display: inline-block;
+        }
+        .col-md-3 {
+            width: 33.3%;
+            display: inline-block;
+        }
+    
+    }
+
+@media (max-width:767px){
+    .col-sm-12{
+        width: 100%;
+/*        background: yellow;*/
+    }
+    .section{
+    margin-right: 0;
+}
+}
